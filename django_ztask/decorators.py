@@ -1,4 +1,3 @@
-from django.utils.decorators import available_attrs
 from functools import wraps
 
 import logging

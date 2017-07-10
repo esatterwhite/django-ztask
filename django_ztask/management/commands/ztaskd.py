@@ -144,7 +144,7 @@ class Command(BaseCommand):
         self.logger = logging.getLogger('ztaskd')
         self.logger.setLevel(LEVELS[loglevel.lower()])
         if logfile:
-            handler = logging.FileHandler(logfile, delay=True)
+            handler = logging.FileHandler(logfile)
         else:
             handler = logging.StreamHandler()
         
